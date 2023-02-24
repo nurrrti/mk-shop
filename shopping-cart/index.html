@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<title>MK-shop</title>
+	<!-- Font Awesome Icons -->
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+	/>
+	<!-- Google Fonts -->
+	<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+	/>
+	<!-- Stylesheet -->
+
+	<link rel="stylesheet" href="./../assets/css/style.css"/>
+	<link rel="stylesheet" href="./../assets/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./../assets/css/animate.css" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body class="flash_body">
+<header class="header-area">
+	<div class="navbar-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand" href="./../index.html">
+							<img src="./../assets/images/logo/logo.png" width="40px" height=40px" alt="Logo" />
+						</a>
+						<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+						>
+							<span class="toggler-icon"> </span>
+							<span class="toggler-icon"> </span>
+							<span class="toggler-icon"> </span>
+						</button>
+
+						<div
+								class="collapse navbar-collapse sub-menu-bar"
+								id="navbarSupportedContent"
+						>
+							<ul id="nav" class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="page-scroll active" href="./../index.html" style="color:#000000">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="page-scroll" href="./../index.html" style="color:#000000">About Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="page-scroll" href="./../index.html" style="color:#000000">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a class="page-scroll" href="./../wishlist/index.html" style="color:#000000">Wishlist</a>
+								</li>
+								<li class="nav-item">
+									<a class="page-scroll" href="./../shopping-cart/index.html" style="color:#000000">Cart</a>
+								</li>
+							</ul>
+						</div>
+						<!-- navbar collapse -->
+
+						<div class="navbar-btn d-none d-sm-inline-block">
+							<a
+									class="main-btn"
+									data-scroll-nav="0"
+									rel="nofollow"
+									style="text-decoration: none;"
+									href="./../public/login.html"
+							>
+								Sign in
+							</a>
+						</div>
+					</nav>
+					<!-- navbar -->
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- container -->
+	</div>
+	<!-- navbar area -->
+</header>
+
+<!-- Start Cart  -->
+<div class="cart-box-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="table-main table-responsive">
+					<table class="table" style="">
+						<thead style="background: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
+    background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+    background-size: 200%;">
+						<tr>
+							<th>Images</th>
+							<th>Product Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Remove</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="thumbnail-img">
+								<a href="#">
+									<img class="img-fluid" src="https://i.imgur.com/5Aqgz7o.jpg" alt="" />
+								</a>
+							</td>
+							<td class="name-pr">
+								<a href="#">
+									Apple iPhone XR (Red, 128 GB)
+								</a>
+							</td>
+							<td class="price-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1" class="c-input-text qty text"></td>
+							<td class="total-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="remove-pr">
+								<a href="#">
+									<i class="fas fa-times"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="thumbnail-img">
+								<a href="#">
+									<img class="img-fluid" src="https://i.imgur.com/5Aqgz7o.jpg" alt="" />
+								</a>
+							</td>
+							<td class="name-pr">
+								<a href="#">
+									Apple iPhone XR (Red, 128 GB)
+								</a>
+							</td>
+							<td class="price-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1" class="c-input-text qty text"></td>
+							<td class="total-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="remove-pr">
+								<a href="#">
+									<i class="fas fa-times"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="thumbnail-img">
+								<a href="#">
+									<img class="img-fluid" src="https://i.imgur.com/5Aqgz7o.jpg" alt="" />
+								</a>
+							</td>
+							<td class="name-pr">
+								<a href="#">
+									Apple iPhone XR (Red, 128 GB)
+								</a>
+							</td>
+							<td class="price-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1" class="c-input-text qty text"></td>
+							<td class="total-pr">
+								<p>$459.99</p>
+							</td>
+							<td class="remove-pr">
+								<a href="#">
+									<i class="fas fa-times"></i>
+								</a>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col-lg-6 col-sm-6">
+				<div class="coupon-box">
+					<div class="input-group input-group-sm">
+						<input class="form-control" placeholder="Enter your coupon code" aria-label="Coupon code" type="text">
+						<div class="input-group-append">
+							<button class="btn btn-theme" type="button">Apply Coupon</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6">
+				<div class="update-box">
+					<input value="Update Cart" type="submit">
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col-lg-8 col-sm-12"></div>
+			<div class="col-lg-4 col-sm-12">
+				<div class="order-box">
+					<h3>Order summary</h3>
+					<div class="d-flex">
+						<h4>Sub Total</h4>
+						<div class="ml-auto font-weight-bold"> $1379.97</div>
+					</div>
+					<div class="d-flex">
+						<h4>Discount</h4>
+						<div class="ml-auto font-weight-bold"> $ 40 </div>
+					</div>
+					<hr class="my-1">
+					<div class="d-flex">
+						<h4>Coupon Discount</h4>
+						<div class="ml-auto font-weight-bold"> $ 10 </div>
+					</div>
+					<div class="d-flex">
+						<h4>Tax</h4>
+						<div class="ml-auto font-weight-bold"> $ 2 </div>
+					</div>
+					<div class="d-flex">
+						<h4>Shipping Cost</h4>
+						<div class="ml-auto font-weight-bold"> Free </div>
+					</div>
+					<hr>
+					<div class="d-flex gr-total">
+						<h5>Grand Total</h5>
+						<div class="ml-auto h5"> $1331.97</div>
+					</div>
+					<hr> </div>
+			</div>
+			<div class="col-12 d-flex shopping-box"><a href="checkout.html" class="main-btn ml-auto btn">Checkout</a> </div>
+		</div>
+
+	</div>
+</div>
+<!-- End Cart -->
+
+<!--====== FOOTER PART START ======-->
+<footer id="footer" class="footer-area pt-10" style="background: linear-gradient(#3172e8, #3737cd)">
+	<div class="container">
+		<!-- subscribe area -->
+		<div class="footer-widget pb-100">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-8">
+					<div
+							class="footer-about mt-50 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.2s"
+					>
+						<a class="logo" href="javascript:void(0)">
+							<img src="./../assets/images/logo/logo.png" alt="logo" />
+						</a>
+						<p class="text">
+							Smartphone store? You bet. Smartphone store's got it all!
+						</p>
+						<ul class="social">
+							<li>
+								<a href="javascript:void(0)">
+									<i class="lni lni-facebook-filled"> </i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="lni lni-twitter-filled"> </i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="lni lni-instagram-filled"> </i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="lni lni-linkedin-original"> </i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- footer about -->
+				</div>
+				<div class="col-lg-5 col-md-7 col-sm-12">
+					<div class="footer-link d-flex mt-50 justify-content-sm-between">
+						<div
+								class="link-wrapper wow fadeIn"
+								data-wow-duration="1s"
+								data-wow-delay="0.4s"
+						>
+							<div class="footer-title">
+								<h4 class="title">Quick Links</h4>
+							</div>
+							<ul class="link">
+								<li><a href="./../index.html">Home</a></li>
+								<li><a href="./../index.html">About Us</a></li>
+								<li><a href="./../index.html">Shop</a></li>
+								<li><a href="./../wishlist/index.html">Wishlist</a></li>
+								<li><a href="./../shopping-cart/index.html">Cart</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- footer link -->
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-12">
+					<div
+							class="footer-contact mt-50 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.8s"
+					>
+						<div class="footer-title">
+							<h4 class="title">Contacts</h4>
+						</div>
+						<ul class="contact">
+							<li>+7 701 999 77 77</li>
+							<li>211111@astanait.edu.kz</li>
+							<li>www.mk-shop.kz</li>
+							<li>
+								Astana, Mangilik El avenue, 55/11 <br />
+								business center EXPO, block C1 <br />
+								Kazakhstan, 010000
+							</li>
+						</ul>
+					</div>
+					<!-- footer contact -->
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- footer widget -->
+	</div>
+	<!-- container -->
+	<div id="particles-2"></div>
+</footer>
+<!--====== FOOTER PART ENDS ======-->
+
+<!-- Script -->
+<script src="script.js"></script>
+
+<!-- ALL JS FILES -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/inewsticker.js"></script>
+<script src="js/bootsnav.js."></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

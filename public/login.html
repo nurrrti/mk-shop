@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Register</title>
+  <meta name="description" content="">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./../assets/css/style.css"/>
+  <link rel="stylesheet" href="./../assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./../assets/css/animate.css" />
+
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
+</head>
+
+<body>
+
+
+<!--====== HEADER PART START ======-->
+<header class="header-area">
+  <div class="navbar-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="./../assets/images/logo/logo.png" width="40px" height=40px" alt="Logo" />
+            </a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+
+            <div
+                    class="collapse navbar-collapse sub-menu-bar"
+                    id="navbarSupportedContent"
+            >
+              <ul id="nav" class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="./../index.html" style="color:#000000">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="./../index.html" style="color:#000000">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="./../index.html" style="color:#000000">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="./../wishlist/index.html" style="color:#000000">Wishlist</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="./../shopping-cart/index.html" style="color:#000000">Cart</a>
+                </li>
+              </ul>
+            </div>
+            <!-- navbar collapse -->
+
+            <div class="navbar-btn d-none d-sm-inline-block">
+              <a
+                      class="main-btn"
+                      data-scroll-nav="0"
+                      rel="nofollow"
+                      href="./../public/login.html"
+              >
+                Sign in
+              </a>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </div>
+  <!-- navbar area -->
+
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <img src="images/img-01.png" alt="IMG">
+      </div>
+
+      <form class="login100-form validate-form" action="/" method="post">
+          <span class="login100-form-title">
+            Member login
+          </span>
+
+        <div class="wrap-input100 validate-input" data-validate = "email is required">
+          <input class="input100" type="email" name="email" placeholder="example@gmail.com" id="email" required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="password" name="password" placeholder="Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                 title="Должно содержать по крайней мере одно число, одну заглавную и строчную буквы, а также не менее 8 и более символов"
+                 required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+        </div>
+
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" name="button" type="submit" id="button">
+            Login
+          </button>
+        </div>
+
+
+        <div class="text-center p-t-12">
+            <span class="txt1">
+              Forgot
+            </span>
+          <a class="txt2" href="#">
+            Username / Password?
+          </a>
+        </div>
+
+        <div class="text-center p-t-136">
+          <a class="txt2" href="index.html">
+            Create your Account
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  document.getElementById('button').onclick = function (){
+    let nameCookie = document.getElementById('name').value
+    let surnameCookie = document.getElementById('surname').value
+    let emailCookie = document.getElementById('email').value
+    let countryCookie = document.getElementById('country').value
+
+    document.cookie = `${nameCookie} = ${surnameCookie} = ${emailCookie} = ${countryCookie}`
+  }
+</script>
+
+
+<script src="js/main.js"></script>
+
+
+<!--===============================================================================================-->
+<script src="server.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+  $('.js-tilt').tilt({
+    scale: 1.1
+  })
+</script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>
